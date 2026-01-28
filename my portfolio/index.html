@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manikantan K | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 60px 40px;
+            color: #fff;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect: zoom + glow */
+        .profile-pic:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgba(255,255,255,0.8);
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0 0 5px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #c33764;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #1d2671;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #1d2671;
+            border-bottom: 3px solid #c33764;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
+
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills li {
+            background: linear-gradient(135deg, #c33764, #1d2671);
+            color: #fff;
+            padding: 12px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .projects .card {
+            background: #f7f7ff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-left: 6px solid #c33764;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #fff;
+            background: rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Make sure your JPEG file is in the same folder -->
+    <img src="doraemon.jpg" alt="Doraemon" class="profile-pic">
+    <div>
+        <h1>MANIKANTAN K</h1>
+        <p>Full Stack Developer</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m Manikantan K, a passionate student learning Full Stack Web Development.
+I enjoy creating responsive websites and web applications using technologies like HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB & MySQL.
+I love building projects, solving problems, and exploring new tools to improve my coding skills.
+This portfolio showcases some of the projects I’ve worked on while learning and practicing web development.</p>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML </li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>CSS</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="card">
+        <h3>Todo App</h3>
+        <p>A full stack todo application using Node.js and MongoDB.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: manikantank0101@gmail.com</p>
+    <p>Phone: +91 9591012941</p>
+    <a href="#" class="btn">Download Resume</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 MANIKANTAN K | Full Stack Developer</p>
+</footer>
+
+</body>
+</html>
+
